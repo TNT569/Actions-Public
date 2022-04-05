@@ -29,6 +29,8 @@ jobs:
         git clone https://github.com/AliaksandrSiarohin/first-order-model --depth 1 ~/first-order-model
         pip install gdown
         gdown 1_v_xW1V52gZCZnXgh1Ap_gwA9YVIzUnS -O ~/ 
+        cd ~/first-order-model
+        pip install -r requirements.txt
     - uses: actions/checkout@v2
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
