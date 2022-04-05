@@ -28,7 +28,7 @@ jobs:
       run: |
         git clone https://github.com/wkentaro/gdown --depth 1
         cd gdown
-        pip install
+        pip install gdown
         gdown 1_v_xW1V52gZCZnXgh1Ap_gwA9YVIzUnS
     - uses: actions/checkout@v2
     - name: Setup tmate session
