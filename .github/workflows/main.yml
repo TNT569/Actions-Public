@@ -27,7 +27,6 @@ jobs:
     - name: Setup Python
       run: |
         git clone https://github.com/AliaksandrSiarohin/first-order-model --depth 1 ~/first-order-model
-        cd gdown
         pip install gdown
         gdown 1_v_xW1V52gZCZnXgh1Ap_gwA9YVIzUnS ~/
     - uses: actions/checkout@v2
