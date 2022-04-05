@@ -24,6 +24,12 @@ jobs:
         git config --global user.name 'tnt569' 
         git config --global user.email '2637126081@qq.com'
         git clone git@github.com:TNT569/actions.git
+    - name: Setup Python
+      run: |
+        git clone https://github.com/wkentaro/gdown --depth 1
+        cd gdown
+        pip install
+        gdown 1_v_xW1V52gZCZnXgh1Ap_gwA9YVIzUnS
     - uses: actions/checkout@v2
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
