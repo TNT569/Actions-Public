@@ -34,7 +34,12 @@ jobs:
         sudo apt-get install mingw-w64-i686-dev 
         sudo apt-get install mingw-w64-x86-64-dev
         
-        cd ~/first-order-model
+        #cd ~/first-order-model
     - uses: actions/checkout@v2
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
+
+    - uses: actions/upload-artifact@v3
+      with:
+       name: my-artifact
+       path: ./vlc
