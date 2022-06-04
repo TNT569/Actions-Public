@@ -19,13 +19,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v2
     - name: setup user and pswd
       env:
         FREENOM_KEY: ${{ secrets.FREENOM_KEY }}
       run: |
         cd auto-freenom
         echo "$FREENOM_KEY" > .\config.py
-    - uses: actions/checkout@v2
     - name: Setup Python
       uses: actions/setup-python@v3.1.0
     - name : Run sprite
