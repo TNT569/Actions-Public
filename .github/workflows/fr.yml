@@ -30,6 +30,7 @@ jobs:
       uses: actions/setup-python@v3.1.0
     - name : Run sprite
       run: |
+        pip3 install virtualenv
         python3 -m venv venv
         source ./venv/activate
         cd auto-freenom
